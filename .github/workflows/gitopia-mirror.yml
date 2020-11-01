@@ -2,7 +2,7 @@ name: Gitopia Mirror
 
 on:
   push:
-    branches: [master]
+    branches: [dev]
 
 jobs:
   build:
@@ -18,5 +18,5 @@ jobs:
         uses: gitopia/gitopia-mirror-action@v0.1.0
         with:
           gitopiaWallet: "${{ secrets.GITOPIA_WALLET }}"
-          branch: "master"
+          branch: "dev"
           remoteUrl: "gitopia://VC4NJ3nlVJJPgyJ4DScpeXx3-UnXmiasfrxiIFpJwb0/gitopia-mirror-sample"
